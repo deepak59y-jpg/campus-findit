@@ -15,7 +15,13 @@ connectDB();
 const app = express();
 
 // CORS configuration (allow requests from frontend)
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://campus-findit.vercel.app',
+  ],
+  credentials: true,
+}));
 
 // Body parser middleware (handles JSON payloads)
 app.use(express.json());
