@@ -14,10 +14,10 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="min-h-screen flex flex-col bg-slate-50">
+        <div className="min-h-screen flex flex-col bg-darkBg text-white">
           <Navbar />
           
-          <main className="flex-grow">
+          <main className="flex-grow pt-24 pb-12">
             <Routes>
               {/* Public Routes */}
               <Route path="/" element={<Home />} />
@@ -46,9 +46,9 @@ function App() {
           </main>
           
           {/* Footer Component */}
-          <footer className="bg-white border-t border-slate-200/60 py-6 mt-auto">
-            <div className="max-w-7xl mx-auto px-4 text-center text-slate-400 text-xs font-semibold">
-              &copy; {new Date().getFullYear()} Campus FindIt. Designed for premium student UX.
+          <footer className="bg-darkBg border-t border-white/5 py-8 mt-auto">
+            <div className="max-w-7xl mx-auto px-4 text-center text-gray-500 text-xs font-medium">
+              &copy; {new Date().getFullYear()} Campus FindIt. Built for students, powered by community.
             </div>
           </footer>
         </div>
@@ -56,5 +56,6 @@ function App() {
     </AuthProvider>
   );
 }
+
 
 export default App;

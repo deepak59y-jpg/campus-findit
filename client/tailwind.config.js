@@ -21,11 +21,21 @@ export default {
           900: '#1e2670',
           950: '#121644',
         },
+        darkBg: '#0B0F19',
+        darkSurface: '#111827',
+        darkSurfaceMuted: '#1F2937',
+        accentIndigo: '#4F46E5',
+        accentViolet: '#6366F1',
+        accentPurple: '#7C3AED',
+        successGreen: '#22C55E',
+        lostRed: '#EF4444',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
   plugins: [],
 }
+
